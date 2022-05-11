@@ -10,8 +10,34 @@
         android:text="@string/name"
         android:textAlignment="center"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:layout_gravity="center_horizontal"
+        android:autofillHints="name"
+        android:hint="What is your nickname?"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=" " />
+    <Button
+        android:id="@+id/done_button"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:onClick="clickHandLerFuction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nickname_text"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <ImageView
         android:id="@+id/star_image"
